@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Chat App Illustration</title>
+  <script src="jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/fontawesome.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script>
+    $(function () {
+      $(".radio-cntxt").fadeOut(0);
+      $(".r1").click(function () {
+        $(".r1-child").fadeIn(200);
+        $(".r1-child").css({
+          "transform": "translate(0%, 0%)",
+        });
+        $(".r2-child").fadeOut(200);
+      });
+      $(".r2").click(function () {
+        $(".r2-child").fadeIn(200);
+        $(".r2-child").css({
+          "transform": "translate(0%, 0%)",
+        });
+        $(".r1-child").fadeOut(200);
+      });
+      
+    });
+  </script>
+</head>
+
+<body>
+  <!-- 
+  Samuel Green
+  Available to Walk
+
+  That sounds great. I’d be happy with that.
+
+  Could you send over some pictures of your dog, please?
+
+  Here are a few pictures. She’s a happy girl!
+
+  Can you make it?
+
+  She looks so happy! The time we discussed works. How long shall I take her out for?
+
+  30 minute walk
+  $29
+
+  1 hour walk
+  $49
+
+  Type a message…
+
+  Simple booking
+
+  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+  discuss arrangements and make bookings. Once the walk has been completed you can rate 
+  your walker and book again all through the chat. -->
+  <main>
+    <div class="background-spec pattern"></div>
+    <div class="background-specs pattern"></div>
+    <div class="main">
+      <form action="javascript:void(0)" method="post">
+        <div class="phoneApp">
+          <div class="heading">
+            <div class="label-top"></div>
+            <div class="heading-flex">
+              <div class="user">
+                <div class="fa-icon"><i class="fas fa-angle-left"></i></div>
+                <div class="flex-user-txt">
+                  <div class="flex-img-user">
+                    <img src="images/avatar.jpg" alt="">
+                  </div>
+                  <div class="txt-user">
+                    <p class="name">Samuel Green</p>
+                    <p class="status">Available to Walk</p>
+                  </div>
+                </div>
+                <div class="fa-icon"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-App">
+            <div class="ani-1 left-chat first-chat chat animation-left">
+              That sounds great. I’d be happy with that.
+            </div>
+            <div class="ani-2 left-chat chat animation-left">
+              Could you send over some pictures of your dog, please?
+            </div>
+            <div class="ani-3 right-chat chat animation-right chat-img-flex">
+              <div class="chat-img-flex-image">
+                <img src="images/dog-image-1.jpg" alt="">
+              </div>
+              <div class="chat-img-flex-image">
+                <img src="images/dog-image-2.jpg" alt="">
+              </div>
+              <div class="chat-img-flex-image">
+                <img src="images/dog-image-3.jpg" alt="">
+              </div>
+            </div>
+            <div class="flex-chats">
+              <div class="right-chat ani-4 txt-right-chat chat animation-right">
+                Here are a few pictures. She’s a happy girl!
+              </div>
+              <div class="right-chat ani-5 fit txt-right-chat chat animation-right">
+                Can you make it?
+              </div>
+            </div>
+            <div class="left-chat ani-6 chat animation-left">
+              She looks so happy! The time we discussed works. How long shall I take her out for?
+            </div>
+            <div class="radio-btn ani-7 animation-left left-chat">
+              <div class="flex-out">
+                <div class="radio r1">
+                  <div class="radio-cntxt r1-child"></div>
+                </div>
+                <p class="txt-radio">30 minute walk</p>
+              </div>
+              <div>
+                <p class="price">$29</p>
+              </div>
+            </div>
+            <div class="radio-btn ani-8 animation-left left-chat">
+              <div class="flex-out">
+                <div class="radio r2">
+                  <div class="radio-cntxt r2-child"></div>
+                </div>
+                <p class="txt-radio">1 hour walk</p>
+              </div>
+              <div>
+                <p class="price">$49</p>
+              </div>
+            </div>
+            <div class="chat-input">
+              <div class="main-input">
+                <input placeholder="Type a message…" type="text" name="message" id="inp">
+              </div>
+              <div class="fa-icon append-btn"><button type="submit"><i class="fa fas fa-angle-right"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="txt-about-main">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
